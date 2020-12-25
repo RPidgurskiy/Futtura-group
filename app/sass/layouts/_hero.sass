@@ -1,0 +1,67 @@
+.hero
+    height: 350px
+    max-width: 660px
+    margin: 130px auto 80px auto
+    text-align: center
+    +media-breakpoint-down(xs)
+        margin: 50px auto 50px auto
+.container--hero
+    justify-content: center
+    display: flex
+    flex-direction: column
+    align-items: center
+.hero
+ &__subtitle
+    margin-bottom: 100px
+ &__image
+    position: absolute
+    right: 0
+    left: 0
+    margin: 0 auto
+    max-width: 880px
+    transform: translate(5%,-20%)
+    +media-breakpoint-down(md)
+        max-width: 485px
+    +media-breakpoint-down(sm)
+        max-width: 320px
+    +media-breakpoint-down(xs)
+        max-width: 280px
+ &__back
+    background: url('../images/dest/hero__back@2x.jpg')
+    height: 446px
+    width: 100%
+    background-size: cover
+    +media-breakpoint-down(md)
+        height: 323px
+    +media-breakpoint-down(xs)
+        height: 200px
+
+
+.vector 
+    position: absolute
+    left: 0
+    right: 0
+.vector--top
+    transform: translate(-10px,-100px)
+.vector--bottom
+    transform: translate(-50px,90px)
+.vector--ellipse
+    transform: translate(215px,60px)
+    position: relative
+    +media-breakpoint-down(sm)
+        transform: translate(115px,-103px)
+    
+.vector--rectangle
+    transform: translate(298px, -65px)
+    position: relative
+    +media-breakpoint-down(md)
+        transform: translate(185px,-114px)
+    +media-breakpoint-down(xs)
+        display: none
+.vector--plus
+    transform: translate(320px, 100px)
+    position: relative
+    +media-breakpoint-down(md)
+        transform: translate(150px,100px)
+    +media-breakpoint-down(xs)
+        display: none
