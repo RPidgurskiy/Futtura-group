@@ -61,7 +61,7 @@ const del          = require('del');
 
 function browsersync() {
 	browserSync.init({
-		server: { baseDir: baseDir + '/' },
+		server: { baseDir: baseDir + 'https://telling-cane.000webhostapp.com/' },
 		notify: false,
 		online: online
 	})
